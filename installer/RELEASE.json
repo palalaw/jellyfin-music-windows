@@ -1,0 +1,12 @@
+{
+  "version": "0.6.3-preview.1",
+  "file": "JellyfinMusic-0.6.3-preview.1-Setup-x64.exe",
+  "bytes": 140660517,
+  "sha256": "8E9133628EA0FB880B9852BD9C80F6392A6D7A9DAA150088924AFDCCBE5F8145",
+  "nativeBuildCommit": "4c4900e5ce226197eb08beb4ea257c46f5ff4069",
+  "nativeBuildRun": 43366607671,
+  "nativeArtifactSha256": "A8B166ADCFD3E43FE535B80A7C7E8DD37E43D632EA9F8E0831F7874515E72C04",
+  "sourceArchives": 9,
+  "managedPackages": 10,
+  "validation": "Release build, payload verification and UI navigation regression passed. Compact navigation and album detail visually verified using rendered previews. Installation not performed."
+}

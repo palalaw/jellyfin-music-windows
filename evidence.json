@@ -1,0 +1,30 @@
+{
+  "date": "2026-11-06",
+  "observedHost": {
+    "displayVersion": "26H1",
+    "build": "28000.3231",
+    "architecture": "x64",
+    "dotnetSDK": "none detected"
+  },
+  "upstream": {
+    "repository": "https://github.com/Salyts/Taskbar-Fluent-Media-Player",
+    "commit": "234aaa6f03a8c3ebf9c00ab972fd62046c28dd64",
+    "version": "1.6.0",
+    "sha256": "5BAF1C9926A3A5C66DA0A82595A7F33148811BD2D32164BD0ED350D85A9C30CB"
+  },
+  "probeSha256": "C707760A42BC0DBF3C0F53CDF82B8771AF9A5C3DEBFC815526829862A3C9CDD0",
+  "toolchain": "Windhawk official v1.7.3 offline installer, extracted to work only",
+  "compile": {
+    "status": "blocked",
+    "error": "clang-20.exe: Permission denied",
+    "syntaxCheckPassed": false,
+    "linked": false
+  },
+  "runtime": {
+    "status": "not run",
+    "reason": "User selected VM/separate test PC",
+    "explorerModified": false,
+    "explorerRestarted": false
+  },
+  "githubChanges": false
+}

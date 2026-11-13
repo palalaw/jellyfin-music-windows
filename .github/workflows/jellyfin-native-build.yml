@@ -1,0 +1,43 @@
+name: Jellyfin native playback build
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'installer/native/**'
+      - '.github/workflows/jellyfin-native-build.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  native:
+    runs-on: windows-2025
+    timeout-minutes: 45
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262
+      - id: msys
+        uses: msys2/setup-msys2@ec48f7c5447b3140e2b088413ae3a55687bccb6e
+        with:
+          msystem: UCRT64
+          update: true
+          install: >-
+            make
+            mingw-w64-ucrt-x86_64-gcc
+            mingw-w64-ucrt-x86_64-pkgconf
+      - name: Build pinned playback sources
+        shell: pwsh
+        run: |
+          $ErrorActionPreference='Stop'
+          $recipe="$PWD/installer/native"
+          python -m pip install --target "$PWD/python-tools" meson==1.12.1 ninja==1.13.2 jinja2==3.1.6 MarkupSafe==3.0.4
+          if($LASTEXITCODE){throw 'Build tools'}
+          python "$recipe/fetch-sources.py" "$PWD/native-build"
+          if($LASTEXITCODE){throw 'Sources'}
+          & "$recipe/build-native.ps1" -Root "$PWD/native-build" -MsysRoot "${{ steps.msys.outputs.msys2-location }}" -PythonTools "$PWD/python-tools"
+          & "$recipe/package-native.ps1" -Root "$PWD/native-build" -MsysRoot "${{ steps.msys.outputs.msys2-location }}" -Destination "$PWD/PlaybackBundle"
+      - uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02
+        with:
+          name: jellyfin-playback-native
+          path: PlaybackBundle
+          if-no-files-found: error
+          retention-days: 30
+

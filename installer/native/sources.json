@@ -1,0 +1,65 @@
+[
+  {
+    "name": "mpv",
+    "repository": "mpv-player/mpv",
+    "ref": "v0.42.0",
+    "url": "https://codeload.github.com/mpv-player/mpv/zip/refs/tags/v0.42.0",
+    "sha256": "5378b08a6438e4bde992387968ffcc55ef0e87b3c10a28e33cb0eb89a1e62ed6"
+  },
+  {
+    "name": "ffmpeg",
+    "repository": "FFmpeg/FFmpeg",
+    "ref": "n8.0.1",
+    "url": "https://codeload.github.com/FFmpeg/FFmpeg/zip/refs/tags/n8.0.1",
+    "sha256": "2337695a733adeefe18eba81992bbff6be627274efd25d06ed61e7dc1eb8e361"
+  },
+  {
+    "name": "libass",
+    "repository": "libass/libass",
+    "ref": "0.17.5",
+    "url": "https://codeload.github.com/libass/libass/zip/refs/tags/0.17.5",
+    "sha256": "d8cdab241e764c3b27052adb4686e240d313a6a1b55d2134e3c78b52e9ef6583"
+  },
+  {
+    "name": "freetype",
+    "repository": "freetype/freetype",
+    "ref": "VER-2-14-1",
+    "url": "https://codeload.github.com/freetype/freetype/zip/refs/tags/VER-2-14-1",
+    "sha256": "9ca6e4df3e5e2ccc4839ba55501e9168dbad7b32ef3b970cb681fd89479c75a3"
+  },
+  {
+    "name": "harfbuzz",
+    "repository": "harfbuzz/harfbuzz",
+    "ref": "12.2.0",
+    "url": "https://codeload.github.com/harfbuzz/harfbuzz/zip/refs/tags/12.2.0",
+    "sha256": "31490c781bacd2ce56862555b11c51c964977c39f14f51b817dfaecf0be089fe"
+  },
+  {
+    "name": "fribidi",
+    "repository": "fribidi/fribidi",
+    "ref": "v1.0.18",
+    "url": "https://codeload.github.com/fribidi/fribidi/zip/refs/tags/v1.0.18",
+    "sha256": "7c6c1a7d3e5e0211b645196d3f568b13de8466b6a0f20e38935b10f870e13fc0"
+  },
+  {
+    "name": "libplacebo",
+    "repository": "haasn/libplacebo",
+    "ref": "v7.387.0",
+    "url": "https://codeload.github.com/haasn/libplacebo/zip/refs/tags/v7.387.0",
+    "sha256": "ed21c9af54dd010bc51375bf75efaadbe8bfbd328154e78187e21bd87b11e218"
+  },
+  {
+    "repository": "fastfloat/fast_float",
+    "ref": "97b54ca9e75f5303507699d27c6b4f4efe4641a1",
+    "url": "https://codeload.github.com/fastfloat/fast_float/zip/97b54ca9e75f5303507699d27c6b4f4efe4641a1",
+    "sha256": "05f3a1a4139a3179e18ddaae386d58de43e469273e22a219b5ed0ec909f3b46f",
+    "name": "fast_float"
+  },
+  {
+    "repository": "KhronosGroup/Vulkan-Headers",
+    "ref": "74d8a6cb930c68ef617b202c3ff3c59d919e086b",
+    "url": "https://codeload.github.com/KhronosGroup/Vulkan-Headers/zip/74d8a6cb930c68ef617b202c3ff3c59d919e086b",
+    "sha256": "b47d389b8bce7d07e63d3be81e623d0c20b897a4b30d37b3ccc36a4cab53311b",
+    "name": "vulkan-headers"
+  }
+]

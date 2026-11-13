@@ -1,0 +1,27 @@
+# Local configuration, authentication and generated artifacts
+.env
+.env.*
+!.env.example
+secrets/
+credentials/
+appsettings.Local.json
+*.user
+*.log
+bin/
+obj/
+build/
+work/
+*.dll
+*.exe
+*.pdb
+
+# Runtime data never belongs in source control
+**/connection.bin
+**/connection.bin.*
+**/artwork/
+**/preferences.json
+**/userprofile.json
+*.dmp
+/native-build/
+/PlaybackBundle/
+/python-tools/
